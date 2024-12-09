@@ -18,8 +18,8 @@ There are also test for each script.
 
 ## Installation
 ### Prerequisites
-- Python 3.7 or higher
-- Required packages: `requests`, `pandas`, `matplotlib`
+- Make sure you have Python installed
+- Required packages: `biopython`, `pandas`, `seaborn`, `matplotlib`
 
 ## Usage 
 ### First script: Finding the TFBS
@@ -65,4 +65,28 @@ This project includes test for each script.
 To run the test 
 
 
-#
+## How to Run the Code
+1. Install the necessary libraries:
+```bash
+pip install biopython pandas seaborn matplotlib
+```
+2. Run the first script
+```
+python TFBS.py <fasta_file> <consensus_sequence>
+```
+3. Run the second script
+```
+python TFBS_analysis.py <text_file> [True/False]
+```
+4. Run the test codes
+To run the test for both files:
+```
+pytest -v
+```
+or run the test for each file separately:
+```
+pytest -v test_TFBS.py
+```
+```
+pytest -v test_TFBS_analysis.py
+```
