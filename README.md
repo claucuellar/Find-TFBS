@@ -19,33 +19,39 @@ Test are also provided for each script.
 - Make sure you have Python installed
 - Required packages: `biopython`, `pandas`, `seaborn`, `matplotlib`
 
-## Description 
-### First script: Finding the TFBS
-The first part of the proyect is the `TFBS.py script`.
+## How to Run the Code
+### Install the required packages
+**1. Install the necessary libraries:**
+```bash
+pip install biopython pandas seaborn matplotlib
+```
 
-Explain
+### Finding the TFBS
+**2. Run the first script `TFBS.py`**
 
 To run this code, use the following command:
 ```
 python TFBS.py <fasta_file> <consensus_sequence>
 ```
-Example:
+_Example:_
 ```
 python TFBS.py RelA.fasta GGGRNWYYCC
 ```
 
-#### Output 
-After running this script, it will generate a tab-separated text file named "TFBS_found.txt" as an output file containing all the TFBSs found in each DNA sequence strand from the input file (fasta file). 
+<ins>Output</ins>
 
-### Second script: Analysing the TFBS found  
-The second part of the project, the TFBS_analysis.py, takes the output file (TFBS_found.txt) from the first script and analyses it. 
-Explain
+After running this script, it will generate a tab-separated text file named `TFBS_found.txt` as an output file containing all the TFBSs found in each DNA sequence strand from the input file (fasta file).
+
+### Analysing the TFBS found  
+**3. Run the second script `TFBS_analysis.py`.**
+
+This code has an optional argument to plot the results, the default being True
 
 To run this code, use the following command:
 ```
 python TFBS_analysis.py <text_file> [True/False]
 ```
-Example:
+_Example:_
 ```
 python TFBS_analysis.py TFBS_found.txt False
 ```
@@ -54,29 +60,8 @@ or
 python TFBS_analysis.py TFBS_found.txt
 ```
 
-#### Output 
-
-
-### Tests
-This project includes test for each script. 
-
-To run the test 
-
-
-## How to Run the Code
-1. Install the necessary libraries:
-```bash
-pip install biopython pandas seaborn matplotlib
-```
-2. Run the first script
-```
-python TFBS.py <fasta_file> <consensus_sequence>
-```
-3. Run the second script
-```
-python TFBS_analysis.py <text_file> [True/False]
-```
-4. Run the test codes
+### Testing
+**4. Run the test codes**
 
 Run the test for both files at the same time:
 ```
