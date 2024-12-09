@@ -8,7 +8,7 @@ The first script (`TFBS.py`) finds all the TFBSs in DNA sequences from a fasta f
 * ID :  DNA sequence ID from the fasta file
 * Direction : forward or reverse strand
 * Sequence : DNA sequence
-* TFBS : TFBSs sequence found
+* TFBS : TFBSs sequence(s) found
 
 The second script (`TFBS_analysis.py`) takes the output file from the first script and runs an analysis of the results. First it finds the DNA sequences that did not have any TFBS. Then it finds the top 10 most common TFBSs found in all the sequences from the fasta file. The results are returned in the terminal.
 
