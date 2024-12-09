@@ -12,7 +12,7 @@ The first script (`TFBS.py`) finds all the TFBSs in DNA sequences from a fasta f
 
 The second script (`TFBS_analysis.py`) takes the output file from the first script and runs an analysis of the results. First it finds the DNA sequences that did not have any TFBS. Then it finds the top 10 most common TFBSs found in all the sequences from the fasta file. The results are returned in the terminal.
 
-Test are also provided for each script. 
+Tests are also provided for each script. 
 
 ## Installation
 ### Prerequisites
@@ -45,7 +45,7 @@ This script will generate a tab-separated text file named `TFBS_found.txt` as an
 
 Run this script with the .txt output file from the previous script (`TFBS_found.txt`) as an argument/input file.  
 
-This code has an optional argument to plot the results, the default being True. 
+This code has an optional argument to plot the results, the default being _True_. 
 
 To run this code, use the following command:
 ```
