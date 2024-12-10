@@ -53,11 +53,11 @@ python TFBS_analysis.py <text_file> [True/False]
 ```
 _Example:_
 ```
-python TFBS_analysis.py TFBS_found.txt False
+python TFBS_analysis.py TFBS_found.txt
 ```
 or
 ```
-python TFBS_analysis.py TFBS_found.txt
+python TFBS_analysis.py TFBS_found.txt False
 ```
 
 ### Testing
