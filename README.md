@@ -4,7 +4,7 @@ Python code for finding Transcription Factor Binding Sites (TFBSs) in DNA Sequen
 ## Overview
 This project consists of two scripts for finding user-specified Transcription Factor Binding Sites (TFBSs) in multi-fasta files and analysing the results. 
 
-The first script (`TFBS.py`) finds all the TFBSs in DNA sequences from a fasta file, in both its forward and reverse strings. This script returns a tab-separated text file, named `TFBS_found.txt`, with the following columns:
+The first script (`TFBS.py`) finds all the TFBSs in all the DNA sequences from a fasta file, in  its forward and reverse strands. This script returns a tab-separated text file, named `TFBS_found.txt`, with the following columns:
 * ID :  DNA sequence ID from the fasta file
 * Direction : forward or reverse strand
 * Sequence : DNA sequence
@@ -29,7 +29,7 @@ pip install biopython pandas seaborn matplotlib
 ### Finding the TFBS
 **2. Run the first script `TFBS.py`**
 
-To run this code, use the following command:
+To run this script, use the following command:
 ```
 python TFBS.py <fasta_file> <consensus_sequence>
 ```
@@ -43,11 +43,11 @@ This script will generate a tab-separated text file named `TFBS_found.txt` as an
 ### Analysing the TFBSs found  
 **3. Run the second script `TFBS_analysis.py`.**
 
-Run this script with the .txt output file from the previous script (`TFBS_found.txt`) as an argument/input file.  
+Run this script with the .txt output file from the previous script (`TFBS_found.txt`) as the input file.  
 
 This code has an optional argument to plot the results, the default being _True_. 
 
-To run this code, use the following command:
+To run this script, use the following command:
 ```
 python TFBS_analysis.py <text_file> [True/False]
 ```
@@ -61,9 +61,9 @@ python TFBS_analysis.py TFBS_found.txt
 ```
 
 ### Testing
-**4. Run the test codes**
+**4. Run the tests codes**
 
-Run the test for both files at the same time:
+Run the tests for both files at the same time:
 ```
 pytest -v
 ```
