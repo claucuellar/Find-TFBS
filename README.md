@@ -43,7 +43,7 @@ This script will generate a tab-separated text file named `TFBS_found.txt` as an
 ### Analysing the TFBSs found  
 **3. Run the second script `TFBS_analysis.py`.**
 
-Run this script with the .txt output file from the previous script (`TFBS_found.txt`) as the input file.  
+Run this script with the .txt output file from the previous script (`TFBS_found.txt`) as the argument passed.  
 
 This code has an optional argument to plot the results, the default being _True_. 
 
@@ -63,7 +63,7 @@ python TFBS_analysis.py TFBS_found.txt False
 ### Testing
 **4. Run the tests codes**
 
-Run the tests for both files at the same time:
+Run the tests for both scripts at the same time:
 ```
 pytest -v
 ```
