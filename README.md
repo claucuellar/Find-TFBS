@@ -26,7 +26,7 @@ Tests are also provided for each script.
 pip install biopython pandas seaborn matplotlib
 ```
 
-### Finding the TFBS
+### Finding the TFBSs
 **2. Run the first script `TFBS.py`**
 
 To run this script, use the following command:
