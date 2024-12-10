@@ -2,7 +2,7 @@
 Python code for finding Transcription Factor Binding Sites (TFBSs) in DNA Sequences from fasta files. 
 
 ## Overview
-This project consists of two scripts for finding user specified Transcription Factor Binding Sites (TFBSs) in multi-sequence .fasta files and analysing the results. 
+This project consists of two scripts for finding user-specified Transcription Factor Binding Sites (TFBSs) in multi-fasta files and analysing the results. 
 
 The first script (`TFBS.py`) finds all the TFBSs in DNA sequences from a fasta file, in both its forward and reverse strings. This script returns a tab-separated text file, named `TFBS_found.txt`, with the following columns:
 * ID :  DNA sequence ID from the fasta file
