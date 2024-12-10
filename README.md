@@ -61,7 +61,7 @@ python TFBS_analysis.py TFBS_found.txt False
 ```
 
 ### Testing
-**4. Run the tests codes**
+**4. Run the tests scripts**
 
 Run the tests for both scripts at the same time:
 ```
